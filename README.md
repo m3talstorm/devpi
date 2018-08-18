@@ -1,5 +1,4 @@
-# devpi
-============
+# Docker devpi
 
 This repository contains a Dockerfile for [devpi pypi server](http://doc.devpi.net/latest/).
 
