@@ -1,0 +1,25 @@
+
+version: '2.4'
+
+services:
+
+    # Management
+    # ---------------------------------------------------------
+
+    devpi:
+        container_name: devpi
+        image: m3talstorm/devpi:latest
+        restart: always
+        build: .
+        ports:
+            - 3141:3141
+        volumes:
+            - devpi_data:/root/.devpi/server/:rw
+
+# Volumes
+# ---------------------------------------------------------
+
+volumes:
+    # Let Docker create volumes on the host to be mapped into the container
+
+    devpi_data:
