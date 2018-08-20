@@ -10,7 +10,7 @@ The outcome is faster development without breaking builds.
 
 ### Installation
 
-`docker pull m3talstorm/devpi`
+`docker pull metalstorm/devpi`
 
 or
 
