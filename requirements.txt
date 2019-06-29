@@ -1,5 +1,5 @@
-devpi-server==4.4.0
-devpi-web==3.3.0
-devpi-client==4.0.3
+devpi-server==4.9.0
+devpi-web==3.5.1
+devpi-client==4.4.0
 devpi-semantic-ui==0.2.2
 devpi-cleaner==0.2.0
