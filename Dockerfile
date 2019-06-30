@@ -12,14 +12,13 @@ COPY requirements.txt requirements.txt
 RUN apk update && apk add --no-cache \
     alpine-sdk=0.5-r0 \
     libffi-dev=3.2.1-r4 \
-    nano=2.9.1-r0 \
-    fish=2.6.0-r2
+    nano=2.9.1-r0
 
 RUN pip install --no-cache-dir -U -r requirements.txt
 
 RUN devpi-server --version
 RUN devpi-server --init
-RUN devpi-server --recreate-search-index
+RUN devpi-server --recreate-search-index --offline
 
 EXPOSE 3141
 
