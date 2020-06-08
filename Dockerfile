@@ -3,7 +3,7 @@ FROM python:3.7.0-alpine3.7
 LABEL maintainer="https://github.com/m3talstorm/devpi"
 
 LABEL version="0.0.1"
-LABEL description="Dev environment"
+LABEL description="PYPI Server"
 
 WORKDIR /
 
@@ -18,7 +18,6 @@ RUN pip install --no-cache-dir -U -r requirements.txt
 
 RUN devpi-server --version
 RUN devpi-server --init
-RUN devpi-server --recreate-search-index --offline
 
 EXPOSE 3141
 
